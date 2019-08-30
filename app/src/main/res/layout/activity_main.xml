@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center" >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="공기청정기"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+
+<ImageView
+    android:id="@+id/CurrentStatusImage"
+    android:layout_width="230dp"
+    android:layout_height="230dp"
+    android:layout_marginTop="20dp"
+    tools:srcCompat="@tools:sample/avatars" />
+
+<TextView
+    android:id="@+id/CurrentStatusText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="현재 상태 : 어떰"
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/StatusExplainText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="현재 상태가 ~~하니 ~~하세요" />
+
+    <TextView
+        android:id="@+id/FDdensity"
+        android:layout_width="197dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="농도 :"
+        android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/UltrafineDustDensityText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="초미세먼지 농도 : "
+    android:textSize="20dp" />
+
+<Switch
+    android:id="@+id/PowerSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="공기청정기 전원 "
+    android:textOn="On"
+    android:textOff="Off"/>
+
+</LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
